@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_name: MyString
+  user_handle: MyString
+  body: MyString
+  favs: 1
+  retweets: 1
+
+two:
+  user_name: MyString
+  user_handle: MyString
+  body: MyString
+  favs: 1
+  retweets: 1

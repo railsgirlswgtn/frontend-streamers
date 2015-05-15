@@ -1,0 +1,36 @@
+<h1>Tweets</h1>
+
+<p>
+Welcome to twitterer - a simple twitter website that shows you the tweets for lots of important people
+</p>
+
+<div class="tweets">
+  <% @tweets.each do |tweet| %>
+    <div class="tweet">
+      <div class="avatar">
+        <%= image_tag tweet.avatar_url %>
+      </div>
+      <div class="header">
+        <div class="name">
+          <%= tweet.user_name %>
+        </div>
+        <div class="handle">
+          <%= tweet.user_handle %>
+        </div>
+      </div>
+      <div class="body">
+        <div class="actions">
+          <div class="reply">
+            <button>Reply</button>
+          </div>
+          <div class="retweets">
+            <%= tweet.retweets %>
+          </div>
+          <div class="favs">
+            <%= tweet.favs %>
+          </div>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

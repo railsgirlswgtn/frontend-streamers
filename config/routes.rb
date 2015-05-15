@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'tweets/index'
+
   get 'architecture/show'
 
   get 'home/show'
